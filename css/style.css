@@ -23,8 +23,9 @@ body {
 
 .table {
     
-    table-layout: fixed;
-    overflow: hidden;
+    /* table-layout:;
+    width: 150px;
+    overflow: hidden; */
     z-index: 1;
     border: 3px;
     border-collapse: collapse;
@@ -43,7 +44,7 @@ body {
     border: 1px, solid darkblue;
     border-radius: 10%;
     background-color:darkcyan;
-    padding: 0%;
+    padding: 0px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -88,7 +89,7 @@ h1 {
 
 .timer {
     position: absolute;
-    margin-left: 750px;
+    margin-left: 850px;
     font-size: 20px;
     text-align: center;
     background-color:darkcyan;
@@ -98,7 +99,7 @@ h1 {
 .flag-counter {
     position: absolute;
     font-size: 20px;
-    margin-left: 615px;
+    margin-left: 650px;
     color: white;
     background-color:darkcyan
 
@@ -131,18 +132,20 @@ h1 {
     background-color: red;
     color: black;
     position: absolute;
-    width: 597px;
-    height: 208px;
+    width: 354px;
+    height: 80px;
     text-align: center;
-    margin-left: 412px;
-    margin-top: -155px;
+    margin-left: 1250px;
+    margin-top: -335px;
+    font-size: 20px;
 }
 
 .btn-modal {
     background-color: white;
     color: black;
-    margin-left: 100px;
+    margin-left: 257spx;
     cursor: pointer;
+    margin-top: -25px;
 
 }
 

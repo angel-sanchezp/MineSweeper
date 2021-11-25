@@ -23,6 +23,8 @@ function init(level) {
         cellshowed: 0
     }
     gLevel = { size: 0, mines: 0 };
+    var elModal = document.querySelector('.modal');
+    elModal.style.display = 'none';
 
     switch (level) {
 
@@ -292,8 +294,8 @@ function renderGameStart() {
 
 function showModal(txt) {
     var elModal = document.querySelector('.modal');
-    var elH1 = elModal.querySelector('h1');
-    elH1.innerText = txt;
+    var elH3 = elModal.querySelector('h3');
+    elH3.innerText = txt;
     elModal.style.display = 'block';
 
 }
@@ -315,7 +317,7 @@ function countTimer() {
 }
 
 function playAgain() {
-    init();
+    location.reload();
 
 }
 
