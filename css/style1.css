@@ -1,0 +1,18 @@
+body {
+    background-image: url('https://store-images.s-microsoft.com/image/apps.14541.14487568773448537.eefbf3e0-fd25-4d51-bbe4-457475ed6752.7ec24493-0f1f-4c58-957b-149d6eb4ddcd?mode=scale&q=90&h=1080&w=1920');
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-family:'Franklin Gothic Medium';
+    font-size: 30px;
+    background-color: blueviolet;
+    color: burlywood;
+    bottom: -800px;
+}
