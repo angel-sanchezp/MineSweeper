@@ -9,23 +9,25 @@
     <div class="container">
         <h1> Mine-Sweeper-Game</h1>
         <div class="timer">0.0</div>
-        <di class="gsmiley"></di>
-        <div class="flag-counter"> Flags:</div>
+        <div class="smile" onclick="init(4)"></div>
+        <div class="flag-counter">Flags:</div>
+        <div class="lives">Lives: <span></span></div>
+        <div class="hints">Hints: <span onclick="clickHint()"></span></div>
         <div class="btn-container">
             <button class="btn" onclick="init(4)">Easy Level</button>
             <button class="btn" onclick="init(8)">Medium Level</button>
             <button class="btn" onclick="init(12)">Super Level</button>
 
         </div>
-        <div class="gamecontainer">
-            <table class="table" border="1" cellpadding="20">
-                <tbody class="board"></tbody>
-            </table>
-        </div>
     </div>
+    <div class="gamecontainer">
+        <table class="table" border="1" cellpadding="20">
+            <tbody class="board"></tbody>
+        </table>
+    </div>
+
     <div class="modal">
         <h3></h3>
-        <button class="btn-modal" onclick="playAgain()">Play Again</button>
     </div>
 
     <script src="js/helpmain.js"></script>
