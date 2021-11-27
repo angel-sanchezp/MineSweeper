@@ -1,6 +1,5 @@
 body {
-    /* background-color: steelblue; */
-    background-image: url('https://image.freepik.com/free-vector/colorful-triangle-patterned-white-background_53876-86389.jpg');
+    background-image: url('https://store-images.s-microsoft.com/image/apps.14541.14487568773448537.eefbf3e0-fd25-4d51-bbe4-457475ed6752.7ec24493-0f1f-4c58-957b-149d6eb4ddcd?mode=scale&q=90&h=1080&w=1920');
     background-repeat: no-repeat;
     height: 100vh;
     background-size: cover;
@@ -10,42 +9,44 @@ body {
 
 .container {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .gamecontainer {
     margin-top: 150px;
     margin-right: 10px;
+    border-style: 1px solid;
     display: flex;
     min-height: 600px;
     justify-content: center;
     align-items: flex-start;
+
 }
 
 .table {
-    
+
     /* table-layout:;
     width: 150px;
     overflow: hidden; */
+    max-width: 50px;
+    max-height: 50px;
     z-index: 1;
-    border: 3px;
+    border: 3px solid black;
     border-collapse: collapse;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
 
 }
 
 .cell {
-    width: 40px;
-    height: 40px;
+    max-width: 35px;
+    max-height: 35px;
     text-align: center;
     transition: 0.2s;
     border: 1px, solid darkblue;
-    border-radius: 10%;
-    background-color:darkcyan;
-    padding: 0px;
-    overflow: hidden;
+    background-color:blueviolet;
     cursor: pointer;
 }
 
@@ -54,20 +55,27 @@ body {
     height: 20px;
 }
 
-.gsmiley {
-    margin-left: -13px;
+.smile {
+    margin-left: 750px;
     position: absolute;
     animation: floatBubble 1s infinite;
     animation-direction: alternate;
+    margin-top: -21px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
 }
 
 .cell img {
     width: 20px;
     height: auto;
 }
-
+.cell:selection {
+    background-color: transparent;
+}
 .show-cell {
-    background-color: grey;
+    background-color:thistle;
 }
 
 .hide-cell {
@@ -75,7 +83,7 @@ body {
 }
 
 h1 {
-    color:black;
+    color: thistle;
     border-color: black;
     font-style: italic;
     text-align: center;
@@ -87,27 +95,54 @@ h1 {
     background-color: red;
 }
 
+
 .timer {
     position: absolute;
-    margin-left: 850px;
+    margin-left: 1000px;
     font-size: 20px;
     text-align: center;
-    background-color:darkcyan;
-    color:white;
+    color: white;
+    margin-top: -21px;
+    font-family: 'Franklin Gothic Medium';
+
+
 }
 
 .flag-counter {
     position: absolute;
     font-size: 20px;
-    margin-left: 650px;
+    margin-left: 600px;
     color: white;
-    background-color:darkcyan
+    margin-top: -25px;
+    font-family: 'Franklin Gothic Medium';
 
+
+}
+.hints{
+    position: absolute;
+    font-size: 20px;
+    margin-left: 370px;
+    margin-top: -47px;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+.hinted-cell{
+    background-color: sandybrown;
+    opacity: 70%;
+}
+
+.lives {
+    position: absolute;
+    font-size: 20px;
+    margin-left: 850px;
+    color: white;
+    margin-top: -29px;
+    font-family: 'Franklin Gothic Medium';
 }
 
 .btn-container {
     position: absolute;
-    bottom: 650px;
+    bottom: 690px;
     width: 100%;
     height: 60px;
     margin-left: -72px;
@@ -119,12 +154,14 @@ h1 {
     width: 100px;
     height: 30px;
     color: white;
-    background-color: orange;
+    background-color:blueviolet;
     margin-left: 10px;
     margin-top: 20px;
     bottom: 8px;
     left: 50px;
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium';
+
 }
 
 .modal {
@@ -140,15 +177,37 @@ h1 {
     font-size: 20px;
 }
 
+
 .btn-modal {
-    background-color: white;
-    color: black;
+    background-color:blueviolet;
+    color:white;
     margin-left: 257spx;
     cursor: pointer;
     margin-top: -25px;
+    display: block;
 
 }
 
 .modal h1 {
     color: white;
+}
+
+.one {
+    color: green;
+    text-shadow: black 1px 1px 1px;
+}
+
+.two {
+    color: yellow;
+    text-shadow: black 1px 1px 1px;
+}
+
+.three {
+    color: orange;
+    text-shadow: black 1px 1px 1px;
+}
+
+.four {
+    color: red;
+    text-shadow: black 1px 1px 1px;
 }
